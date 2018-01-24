@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\fincas;
 use App\Http\Requests\FincasRequest;
+use Illuminate\Support\Facades\View;
 
 class FincasController extends Controller
 {
@@ -12,6 +13,11 @@ class FincasController extends Controller
 
     	$fin= fincas::orderBy('id','DESC')->paginate();
     	return view('finc.findex', compact('fin'));
+    }
+
+    public function fincascrod(){
+
+        return view('fincascrod');
     }
 
 	public function create(){

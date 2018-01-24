@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="links">
-		<a href="{{ reoute('fincas.index') }}">Listado de fincas</a>
+		<a href="{{ route('fincas.index') }}">Listado de fincas</a>
 		
 	</div>
 </body>
