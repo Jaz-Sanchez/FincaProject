@@ -20,9 +20,13 @@ class CreateFincasTable extends Migration
             $table->integer('telfinca');
             $table->string('ciudad');
             $table->string('estado');
-            $table->integer('us_id')->unsigned;
-            $table->foreign('us-id')->references('id')->on('users');
+            $table->integer('us_id')->unsigned();
+
             $table->timestamps();
+
+            $table->foreign('us_id')->references('id')->on('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

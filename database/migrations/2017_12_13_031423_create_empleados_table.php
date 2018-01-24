@@ -15,7 +15,7 @@ class CreateEmpleadosTable extends Migration
     {
         Schema::create('empleados', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('fin_id')->unsigned();
+            $table->integer('fin_id')->unsigned();
             $table->string('nomemp');
             $table->integer('edademp');
             $table->string('edocivil');
@@ -31,9 +31,12 @@ class CreateEmpleadosTable extends Migration
             $table->string('cargo');
             $table->string('jefedirecto');
             $table->string('subordinados');
-            $table->foreign('fin_id')->references('id')->on('fincas');
 
             $table->timestamps();
+
+            $table->foreign('fin_id')->references('id')->on('fincas')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 
