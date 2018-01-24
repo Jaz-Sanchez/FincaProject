@@ -9,7 +9,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.env
 
 # Created by https://www.gitignore.io/api/phpstorm,sublimetext,phpstorm+all,phpstorm+iml
 
@@ -186,3 +185,6 @@ GitHub.sublime-settings
 
 
 # End of https://www.gitignore.io/api/phpstorm,sublimetext,phpstorm+all,phpstorm+iml
+composer.lock
+*.lock
+composer.lock
