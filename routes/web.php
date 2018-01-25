@@ -12,7 +12,7 @@ Route::resource('fincas','FincasController');
 
 Route::resource('empleados','EmpleadoController');//contiene todas las rutas de crod
 
-
+Route::resource('marcas','MarcaController');
 
 
 
