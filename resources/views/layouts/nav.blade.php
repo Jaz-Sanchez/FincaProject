@@ -9,7 +9,7 @@
       <li class="dropdown">
       </li>
       <li><a href="{{URL::route('fincascrod')}}">Fincas</a></li>
-      <li><a href="#">Pagina 2</a></li>
+      <li><a href="{{URL::route('empleadoscrod')}}">Empleados</a></li>
       <li><a href="#">Pagina 3</a></li>
       <li><a>Cerrar sesion</a></li>
     </ul>
