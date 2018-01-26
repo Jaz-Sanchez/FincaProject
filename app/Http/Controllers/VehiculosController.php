@@ -24,10 +24,12 @@ class VehiculosController extends Controller
     	$veh = new vehiculos;
     	$veh->idTipoV = $request->idTipoV;
     	$veh->idFinca = $request->idFinca;
+        $veh->idmarc = $request->idmarc;
     	$veh->Marca = $request->Marca;
     	$veh->Combustible = $request->Combustible;
     	$veh->Rendimiento = $request->Rendimiento;
     	$veh->ModeloVeh = $request->ModeloVeh;
+        $veh->yearFabricacion = $request->yearFabricacion;
     	$veh->Adepreciacion = $request->Adepreciacion;
     	$veh->ValorActVeh = $request->ValorActVeh;
     	$veh->save();
@@ -41,10 +43,12 @@ class VehiculosController extends Controller
     	$veh=vehiculos::find($id);
     	$veh->idTipoV = $request->idTipoV;
     	$veh->idFinca = $request->idFinca;
+        $veh->idmarc = $request->idmarc;
     	$veh->Marca = $request->Marca;
     	$veh->Combustible = $request->Combustible;
     	$veh->Rendimiento = $request->Rendimiento;
     	$veh->ModeloVeh = $request->ModeloVeh;
+        $veh->yearFabricacion = $request->yearFabricacion;
     	$veh->Adepreciacion = $request->Adepreciacion;
     	$veh->ValorActVeh = $request->ValorActVeh;
     	$veh->save();

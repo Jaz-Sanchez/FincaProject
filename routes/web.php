@@ -18,6 +18,8 @@ Route::resource('tipveh','TipvehController');
 
 Route::resource('vehic','VehiculosController');
 
+Route::resource('predio','PrediosController');
+
 
 
 Route::get('empleadoscrod','EmpleadoController@empleadoscrod', function(){

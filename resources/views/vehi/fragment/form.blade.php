@@ -1,3 +1,4 @@
+
 <div class="form-group">
 	{!! Form::label('idTipoV','Tipo de vehiculo') !!}
 	{!! Form::number('idTipoV', null, ['class' => 'form-control']) !!}
@@ -6,6 +7,11 @@
 <div class="form-group">
 	{!! Form::label('idFinca','Finca a la que pertenece') !!}
 	{!! Form::number('idFinca', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+	{!! Form::label('idmarc','Marca') !!}
+	{!! Form::number('idmarc', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
@@ -31,6 +37,11 @@
 <div class="form-group">
 	{!! Form::label('Adepreciacion','Depreciacion') !!}
 	{!! Form::text('Adepreciacion', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+	{!! Form::label('yearFabricacion','Año de Fabricacion') !!}
+	{!! Form::number('yearFabricacion', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">

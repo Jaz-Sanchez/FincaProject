@@ -5,7 +5,7 @@
 		<div class="col-md-4 col-md-offset-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h1 class="panel-title">Acceso a la áplicasion</h1>
+					<h1 class="panel-title">Acceso</h1>
 				</div>
 				<div class="panel-body">
 					<form method="POST" action="{{ route('login') }}">

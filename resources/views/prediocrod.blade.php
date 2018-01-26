@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>VehiculosCrod</title>
+	<title>PrediosCrod</title>
 </head>
 <body>
 	<div class="links">
-		<a href="{{ route('vehic.index') }}">Lista de vehiculos</a>
+		<a href="{{ route('predio.index') }}">Lista de predios</a>
 		
 	</div>
 </body>

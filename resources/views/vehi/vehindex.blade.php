@@ -12,10 +12,12 @@
 				<tr>
 					<th width="20xp">Tipo</th>
 					<th width="20xp">Finca</th>
+					<th width="20xp">Marca</th>
 					<th>Marca</th>
 					<th>Combustible</th>
 					<th>Rendimiento</th>
 					<th>Modelo</th>
+					<th>Año</th>
 					<th>Depreciacion</th>
 					<th>Valor Actual</th>
 					
@@ -27,12 +29,14 @@
 					<tr>
 						<td>{{ $vehicul->idTipoV }}</td>
 						<td>{{ $vehicul->idFinca }}</td>
+						<td>{{ $vehicul->idmarc }}</td>
 						<td>{{ $vehicul->Marca }}</td>
 						<td>{{ $vehicul->Combustible }}</td>
 						<td>{{ $vehicul->Rendimiento }}</td>
 						<td>
 							<strong>{{ $vehicul->ModeloVeh }}</strong>
 						</td>
+						<td>{{ $vehicul->yearFabricacion }}</td>
 						<td>{{ $vehicul->Adepreciacion }}</td>
 						<td>{{ $vehicul->ValorActVeh }}</td>						
 				

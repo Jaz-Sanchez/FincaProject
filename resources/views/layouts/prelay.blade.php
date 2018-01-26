@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>App | vehONL</title>
+	<title>App | predONL</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
 	<div class:"container">
 		<div clas="row">
 			<div class="col-xs-12">
-				<h1 class="page-header text-center"> Crud de vehiculos</h1>
-			</div>			
+				<h1 class="page-header text-center"> Crud Predio</h1>
+			</div>
+
 			@yield('content')
 		</div>
 	</div>
