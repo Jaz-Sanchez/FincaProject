@@ -22,7 +22,7 @@ class CreateVehiculosTable extends Migration
             $table->string('Combustible', 8)->nullable();
             $table->string('Rendimiento', 25)->nullable();
             $table->string('ModeloVeh');
-            $table->integer('yearFabricacion');
+            $table->integer('yearFabricacion')->nullable();
             $table->integer('Adepreciacion')->nullable();
             $table->decimal('ValorActVeh', 12,2)->nullable();
 
