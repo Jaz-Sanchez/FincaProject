@@ -15,14 +15,10 @@ class CreateTipsvehiculosTable extends Migration
     {
         Schema::create('tipsvehiculos', function (Blueprint $table) {
             $table->increments('id');
-
-
-            $table->integer('idmarc')->unsigned();
             $table->string('nomTipo');
 
             $table->timestamps();
 
-            $table->foreign('idmarc')->references('id')->on('marcas');
         });
     }
 

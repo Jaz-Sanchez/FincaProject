@@ -17,10 +17,12 @@ class CreateVehiculosTable extends Migration
             $table->increments('id');
             $table->integer('idTipoV')->unsigned();
             $table->integer('idFinca')->unsigned();
+            $table->integer('idmarc')->unsigned();
             $table->string('Marca', 25);
             $table->string('Combustible', 8)->nullable();
             $table->string('Rendimiento', 25)->nullable();
-            $table->integer('ModeloVeh');
+            $table->string('ModeloVeh');
+            $table->integer('yearFabricacion');
             $table->integer('Adepreciacion')->nullable();
             $table->decimal('ValorActVeh', 12,2)->nullable();
 
@@ -28,6 +30,7 @@ class CreateVehiculosTable extends Migration
 
             $table->foreign('idTipoV')->references('id')->on('tipsvehiculos');
             $table->foreign('idFinca')->references('id')->on('fincas');
+            $table->foreign('idmarc')->references('id')->on('marcas');
         });
     }
 
