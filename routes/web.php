@@ -14,6 +14,10 @@ Route::resource('empleados','EmpleadoController');//contiene todas las rutas de 
 
 Route::resource('marcas','MarcaController');
 
+Route::resource('tipveh','TipvehController');
+
+Route::resource('vehic','VehiculosController');
+
 
 
 Route::get('empleadoscrod','EmpleadoController@empleadoscrod', function(){
