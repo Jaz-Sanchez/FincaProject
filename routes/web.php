@@ -20,6 +20,10 @@ Route::resource('vehic','VehiculosController');
 
 Route::resource('predio','PrediosController');
 
+Route::resource('clasifi','ClasController');
+
+Route::resource('prod','ProductosController');
+
 
 
 Route::get('empleadoscrod','EmpleadoController@empleadoscrod', function(){
