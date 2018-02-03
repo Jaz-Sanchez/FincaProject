@@ -10,7 +10,6 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">ID</th>
 					<th>Nombre del predio</th>
 					<th>numLote</th>
 					<th>Superficie</th>
@@ -24,7 +23,6 @@
 			<tbody>
 				@foreach($pre as $predidio)
 				<tr>
-					<td>{{ $predidio->idFin }}</td>
 					<td>
 						<strong>{{ $predidio->nombrePredio }}</strong>
 					</td>	

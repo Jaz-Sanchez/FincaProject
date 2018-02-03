@@ -10,9 +10,6 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">Tipo</th>
-					<th width="20xp">Finca</th>
-					<th width="20xp">Marca</th>
 					<th>Marca</th>
 					<th>Combustible</th>
 					<th>Rendimiento</th>
@@ -27,9 +24,6 @@
 			<tbody>
 				@foreach($veh as $vehicul)
 					<tr>
-						<td>{{ $vehicul->idTipoV }}</td>
-						<td>{{ $vehicul->idFinca }}</td>
-						<td>{{ $vehicul->idmarc }}</td>
 						<td>{{ $vehicul->Marca }}</td>
 						<td>{{ $vehicul->Combustible }}</td>
 						<td>{{ $vehicul->Rendimiento }}</td>

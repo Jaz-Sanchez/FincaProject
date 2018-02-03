@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\productos;
+use App\clasificaciones;
+
 use App\Http\Requests\ProductosRequest;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +17,8 @@ class ProductosController extends Controller
     }
 
  	 public function create(){
-    	
-    	return view('produc.create');
+    	$class = clasificaciones::all();
+    	return view('produc.create', compact('class'));
     }
 
     public function store(ProductosRequest $request){
@@ -49,9 +51,9 @@ class ProductosController extends Controller
     }
 
  	public function edit($id){
-    	
+    	$class = clasificaciones::all();
     	$prodd=productos::find($id);
-    	return view('produc.edit', compact('prodd'));
+    	return view('produc.edit', compact('prodd','class'));
     }
 
     public function show($id){

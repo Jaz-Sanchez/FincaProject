@@ -1,6 +1,13 @@
 <div class="form-group">
-	{!! Form::label('idClasif','Clasificacion') !!}
-	{!! Form::number('idClasif', null, ['class' => 'form-control']) !!}
+	<label for="">Clasificacion</label>
+
+	<select name="idClasif" id="idClasif" class="form-control">
+		<option value="">Elija una clasificacion</option>
+		@foreach($class as $clasificasion)
+			<option value="{{ $clasificasion['id'] }}" >{{ $clasificasion['nomClasif'] }}</option>
+		@endforeach
+	</select>
+															
 </div>
 
 <div class="form-group">

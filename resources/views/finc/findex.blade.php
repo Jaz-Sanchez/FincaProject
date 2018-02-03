@@ -9,7 +9,7 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">ID</th>
+					
 					<th>Nombre de la finca</th>
 					<th colspan="3">&nbsp;</th>
 				</tr>
@@ -17,7 +17,7 @@
 			<tbody>
 				@foreach($fin as $finca)
 				<tr>
-					<td>{{ $finca->id }}</td>
+					
 					<td>
 						<strong>{{ $finca->nomfinca }}</strong>
 						{{ $finca->domfinca }}

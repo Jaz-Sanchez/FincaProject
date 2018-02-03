@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\empleados;
+use App\fincas;
 use App\Http\Requests\EmpleadoRequest;
 use Illuminate\Support\Facades\View;
 
@@ -17,8 +18,8 @@ class EmpleadoController extends Controller
     }
 
     public function create(){
-
-    	return view('empleado.create');
+        $fin =fincas::all();
+    	return view('empleado.create', compact('fin'));
     }
 
     public function store(EmpleadoRequest $request){
@@ -75,9 +76,9 @@ class EmpleadoController extends Controller
     }
 
     public function edit($id){
-
+        $fin =fincas::all();
     	$emplea = empleados::find($id);
-    	return view('empleado.edit', compact('emplea'));
+    	return view('empleado.edit', compact('emplea','fin'));
     }
 
     public function show($id){

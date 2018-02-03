@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\vehiculos;
+use App\fincas;
+use App\marcas;
+use App\tipsvehiculos;
 use App\Http\Requests\VehiculosRequest;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +18,10 @@ class VehiculosController extends Controller
     }
 
  	 public function create(){
-    	
-    	return view('vehi.create');
+    	$fin = fincas::all();
+        $marc = marcas::all();
+        $tipv = tipsvehiculos::all();
+    	return view('vehi.create', compact('fin','marc','tipv'));
     }
 
     public function store(VehiculosRequest $request){
@@ -57,9 +62,11 @@ class VehiculosController extends Controller
     }
 
  	public function edit($id){
-    	
+    	$fin = fincas::all();
+        $marc = marcas::all();
+        $tipv = tipsvehiculos::all();
     	$veh=vehiculos::find($id);
-    	return view('vehi.edit', compact('veh'));
+    	return view('vehi.edit', compact('veh','fin','marc','tipv'));
     }
 
     public function show($id){

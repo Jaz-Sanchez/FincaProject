@@ -1,6 +1,12 @@
+
 <div class="form-group">
-	{!! Form::label('fin_id','Finca a la cual pertenece') !!}
-	{!! Form::number('fin_id', null, ['class' => 'form-control']) !!}
+	<label for="">Finca a la cual pertenece</label>
+	<select name="fin_id" id="fin_id" class="form-control">
+		<option value="">Finca donde labora</option>
+		@foreach($fin as $finca)
+			<option value="{{ $finca['id'] }}" >{{ $finca['nomfinca'] }}</option>
+		@endforeach
+	</select>															
 </div>
 
 <div class="form-group">

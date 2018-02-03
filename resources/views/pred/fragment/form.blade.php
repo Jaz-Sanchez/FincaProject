@@ -1,6 +1,12 @@
+
 <div class="form-group">
-	{!! Form::label('idFin','Finca a la que pertenece') !!}
-	{!! Form::number('idFin', null, ['class' => 'form-control']) !!}
+	<label for="">Finca a la que pertenece</label>
+	<select name="idFin" id="idFin" class="form-control">
+		<option value="">Elija finca</option>
+		@foreach($fin as $finca)
+			<option value="{{ $finca['id'] }}" >{{ $finca['nomfinca'] }}</option>
+		@endforeach
+	</select>															
 </div>
 <div class="form-group">
 	{!! Form::label('nombrePredio','Nombre del predio') !!}

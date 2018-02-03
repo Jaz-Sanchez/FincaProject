@@ -24,8 +24,14 @@
 </div>
 
 <div class="form-group">
-	{!! Form::label('us_id','Usuario a quien pertenece') !!}
-	{!! Form::number('us_id', null, ['class' => 'form-control']) !!}
+	<label for="">Usuario a quien pertenece</label>
+
+	<select name="us_id" id="us_id" class="form-control">
+		<option value="">Usuario</option>
+		@foreach($us as $usu)
+			<option value="{{ $usu['id'] }}" >{{ $usu['name'] }}</option>
+		@endforeach
+	</select>															
 </div>
 
 <div class="form-group">

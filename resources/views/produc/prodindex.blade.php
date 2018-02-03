@@ -10,8 +10,9 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">ID</th>
+					
 					<th width="20xp">Clasif</th>
+					<th>Nombre del producto</th>
 					<th>Descripcion del producto</th>
 					<th>costo</th>
 					<th>Precio de venta</th>
@@ -21,7 +22,10 @@
 			<tbody>
 				@foreach($prodd as $productto)
 					<tr>
-						<td>{{ $productto->id }}</td>
+						
+						<td>
+							{{ $productto->idClasif }}
+						</td>
 						<td>
 							<strong>{{ $productto->nomProducto }}</strong>
 						</td>

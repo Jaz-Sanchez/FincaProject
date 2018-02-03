@@ -10,8 +10,6 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">ID</th>
-					<th width="20xp">Finca</th>
 					<th>Nombre</th>
 					<th>Edad</th>
 					<th>Estadocivil</th>
@@ -34,8 +32,6 @@
 			<tbody>
 				@foreach($emp as $empleado)
 				<tr>
-					<td>{{ $empleado->id }}</td>
-					<td>{{ $empleado->fin_id }}</td>
 					<td>
 						<strong>{{ $empleado->nomemp }}</strong>
 					</td>	

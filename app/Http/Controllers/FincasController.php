@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\fincas;
+use App\User;
 use App\Http\Requests\FincasRequest;
 use Illuminate\Support\Facades\View;
 
@@ -21,7 +22,8 @@ class FincasController extends Controller
     }
 
 	public function create(){
-    	return view('finc.create');
+        $us = User::all();
+    	return view('finc.create',compact('us'));
     }
 
     public function store(FincasRequest $request){
@@ -41,9 +43,9 @@ class FincasController extends Controller
     }
 
 	public function edit($id){
-
+        $us = User::all();
     	$finc = fincas::find($id);
-    	return view('finc.edit', compact('finc'));
+    	return view('finc.edit', compact('finc','us'));
     }
 
     public function update(FincasRequest $request, $id){

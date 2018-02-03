@@ -1,17 +1,32 @@
 
 <div class="form-group">
-	{!! Form::label('idTipoV','Tipo de vehiculo') !!}
-	{!! Form::number('idTipoV', null, ['class' => 'form-control']) !!}
+	<label for="">Tipo de vehiculo</label>
+	<select name="idTipoV" id="idTipoV" class="form-control">
+		<option value="">Elija un tipo</option>
+		@foreach($tipv as $tipo)
+			<option value="{{ $tipo['id'] }}" >{{ $tipo['nomTipo'] }}</option>
+		@endforeach
+	</select>														
 </div>
 
 <div class="form-group">
-	{!! Form::label('idFinca','Finca a la que pertenece') !!}
-	{!! Form::number('idFinca', null, ['class' => 'form-control']) !!}
+	<label for="">Finca a la que prtenece</label>
+	<select name="idFinca" id="idFinca" class="form-control">
+		<option value="">Elija finca</option>
+		@foreach($fin as $finca)
+			<option value="{{ $finca['id'] }}" >{{ $finca['nomfinca'] }}</option>
+		@endforeach
+	</select>														
 </div>
 
 <div class="form-group">
-	{!! Form::label('idmarc','Marca') !!}
-	{!! Form::number('idmarc', null, ['class' => 'form-control']) !!}
+	<label for="">Marca</label>
+	<select name="idmarc" id="idmarc" class="form-control">
+		<option value="">Elija marca</option>
+		@foreach($marc as $marca)
+			<option value="{{ $marca['id'] }}" >{{ $marca['nomMarca'] }}</option>
+		@endforeach
+	</select>
 </div>
 
 <div class="form-group">
