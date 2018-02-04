@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}"	>
 <head>
 	<meta charset="UTF-8">
-	<title>Custom Login</title>
+	<title>Gestion Agroem</title>
 	<link rel="stylesheet" href="/css/app.css">
 
 

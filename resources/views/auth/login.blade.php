@@ -5,7 +5,7 @@
 		<div class="col-md-4 col-md-offset-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h1 class="panel-title">Acceso a la áplicasion</h1>
+					<h1 class="panel-title">Acceso a la aplicasion</h1>
 				</div>
 				<div class="panel-body">
 					<form method="POST" action="{{ route('login') }}">
@@ -26,6 +26,10 @@
 								name="password" 
 								placeholder="Ingresa tu contraseña">	
 								{!! $errors->first('password', '<span class="help-block">:message</span>') !!}
+						</div>
+						<div class="form-group">
+							<label>¿No tienes una cuenta? Regístrate</label>
+							<a href="{{ route('Registro') }}">aquí</a>
 						</div>
 						<button class="button btn btn-primary btn-block" >Acceder</button>
 					</form>

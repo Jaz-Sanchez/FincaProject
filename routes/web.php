@@ -8,6 +8,12 @@ Route::post('login', 'Auth\LoginController@login')->name('login');
 
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
+// Registration Routes...
+Route::get('Registro', 'Auth\RegisterController@showRegistrationForm')->name('Registro');
+Route::post('Registro', 'Auth\RegisterController@register');
+
+Route::resource('users','UsersController');
+
 Route::resource('fincas','FincasController');
 
 Route::resource('empleados','EmpleadoController');//contiene todas las rutas de crod
