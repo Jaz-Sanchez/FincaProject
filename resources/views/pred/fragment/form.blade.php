@@ -20,7 +20,7 @@
 
 <div class="form-group">
 	{!! Form::label('superficie','Extencion de la superficie') !!}
-	{!! Form::number('superficie', null, ['class' => 'form-control']) !!}
+	{!! Form::number('superficie', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">

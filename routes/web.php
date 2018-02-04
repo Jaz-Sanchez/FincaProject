@@ -24,6 +24,8 @@ Route::resource('clasifi','ClasController');
 
 Route::resource('prod','ProductosController');
 
+Route::resource('clients','ClientesController');
+
 
 
 Route::get('empleadoscrod','EmpleadoController@empleadoscrod', function(){

@@ -66,7 +66,7 @@
 
 <div class="form-group">
 	{!! Form::label('sueldonto','Sueldo neto') !!}
-	{!! Form::text('sueldonto', null, ['class' => 'form-control']) !!}
+	{!! Form::text('sueldonto', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">

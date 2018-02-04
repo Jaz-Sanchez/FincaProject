@@ -10,7 +10,7 @@
 		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<th width="20xp">ID</th>
+					
 					<th>Nombre de clasificacion</th>
 					<th colspan="3">&nbsp;</th>
 				</tr>
@@ -18,7 +18,7 @@
 			<tbody>
 				@foreach($class as $claso)
 					<tr>
-						<td>{{ $claso->id }}</td>
+						
 						<td>
 							<strong>{{ $claso->nomClasif }}</strong>
 						</td>

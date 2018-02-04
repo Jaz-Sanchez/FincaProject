@@ -46,12 +46,12 @@
 
 <div class="form-group">
 	{!! Form::label('ModeloVeh','Modelo') !!}
-	{!! Form::number('ModeloVeh', null, ['class' => 'form-control']) !!}
+	{!! Form::number('ModeloVeh', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">
 	{!! Form::label('Adepreciacion','Depreciacion') !!}
-	{!! Form::text('Adepreciacion', null, ['class' => 'form-control']) !!}
+	{!! Form::text('Adepreciacion', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">
@@ -61,7 +61,7 @@
 
 <div class="form-group">
 	{!! Form::label('ValorActVeh','Valor actual') !!}
-	{!! Form::number('ValorActVeh', null, ['class' => 'form-control']) !!}
+	{!! Form::number('ValorActVeh', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">

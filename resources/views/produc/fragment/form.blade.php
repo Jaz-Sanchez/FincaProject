@@ -22,12 +22,12 @@
 
 <div class="form-group">
 	{!! Form::label('costo','Costo') !!}
-	{!! Form::number('costo', null, ['class' => 'form-control']) !!}
+	{!! Form::number('costo',null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">
 	{!! Form::label('preciovta','Precio de venta') !!}
-	{!! Form::number('preciovta', null, ['class' => 'form-control']) !!}
+	{!! Form::number('preciovta', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">
