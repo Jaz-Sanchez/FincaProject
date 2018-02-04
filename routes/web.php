@@ -26,6 +26,8 @@ Route::resource('prod','ProductosController');
 
 Route::resource('clients','ClientesController');
 
+Route::resource('prov','ProveedoresController');
+
 
 
 Route::get('empleadoscrod','EmpleadoController@empleadoscrod', function(){
