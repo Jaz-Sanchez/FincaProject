@@ -2,11 +2,17 @@
 
 Route::get('/', 'Auth\LoginController@showLoginForm');
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('dashboard','DashboardController@index')->name('dashboard');
 
-Route::post('login', 'Auth\LoginController@login')->name('login');
+Route::get('login', 'Auth\LoginController@login')->name('login');
+Route::post('login', 'Auth\LoginController@login');
 
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+//Route::get('Login', 'Auth\RegisterController@showLoginForm')->name('Login');
+//Route::post('Login', 'Auth\RegisterController@login');
 
 // Registration Routes...
 Route::get('Registro', 'Auth\RegisterController@showRegistrationForm')->name('Registro');
