@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePrediosTable extends Migration
+class CreatePozosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,22 +13,19 @@ class CreatePrediosTable extends Migration
      */
     public function up()
     {
-        Schema::create('predios', function (Blueprint $table) {
+        Schema::create('pozos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idFin')->unsigned();
-            $table->string('nombrePredio', 30);
-            $table->integer('numLote');
-            $table->decimal('superficie', 10,2);
-            $table->string('regimenHumedad', 20);
-            $table->string('tipRiego', 20);
+            $table->integer('idFiin')->unsigned();
+            $table->string('pozo', 50);
+            $table->string('medidor', 50)->nullable();
+            $table->string('ubicacionPzo', 50)->nullable();
             $table->float('latitud',10,6)->nullable();
             $table->float('longitud',10,6)->nullable();
             $table->float('altitud',10,6)->nullable();
-            $table->text('observaciones')->nullable();
-
             $table->timestamps();
 
-            $table->foreign('idFin')->references('id')->on('fincas');
+
+            $table->foreign('idFiin')->references('id')->on('fincas');
         });
     }
 
@@ -39,6 +36,6 @@ class CreatePrediosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('predios');
+        Schema::dropIfExists('pozos');
     }
 }

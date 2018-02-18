@@ -44,3 +44,6 @@ Route::get('fincascrod','FincasController@fincascrod', function(){
 
 Route::get('empleadoscrod', array('as' => 'empleadoscrod', 'uses' => 'EmpleadoController@empleadoscrod'));
 Route::get('fincascrod', array('as' => 'fincascrod', 'uses' => 'FincasController@fincascrod'));
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
