@@ -1,17 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<link rel="stylesheet" href="{{asset('css/icon/css/fontello.css')}}">-->
+  <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Finca´s P</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Inicio</a></li>
-      <li class="dropdown">
-      </li>
-      <li><a href="{{URL::route('fincascrod')}}">Fincas</a></li>
-      <li><a href="{{URL::route('empleadoscrod')}}">Empleados</a></li>
-      <li><a href="#">Pagina 3</a></li>
-      <li><a>Cerrar sesion</a></li>
-    </ul>
-  </div>
-</nav>
+</head>
+<body>
+  <main>
+    <div class="content-all ">
+      <input type="checkbox" id="check" >
+      <label for="check"><i class="fas fa-bars hidden"></i></label>
+        <nav class="menu">     
+             <li><a href=""><i class="icono izquierda fas fa-home"></i>Inicio</a></li>
+             <li class="dropdown"><a href="#">Fincas<i class="icono derecha fas fa-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown-header">sub menu finca</li>
+                  <li><a href="">a</a></li>
+                  <li><a href="">b</a></li>
+                  <li><a href="">c</a></li>
+                </ul>
+             </li>
+             <li><a href="{{URL::route('empleadoscrod')}}">Empleados</a></li>
+             <li><a href="">Productos</a></li>
+             <li><a href="">12</a></li>
+             <li><a href="">11</a></li>
+             <li><a href="">22</a></li>
+             <li><a href="">22</a></li>
+             <li><a href=""></a></li>
+             <li><a href=""></a></li> 
+          
+        </nav>   
+  </main>
+  <script src="js/JQuery-2.1.4.min.js" ></script>
+  <script src="js/main.js"></script> 
+</body>
+</html>

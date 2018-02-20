@@ -27,8 +27,11 @@ class PrediosController extends Controller
     	$pre->nombrePredio = $request->nombrePredio;
         $pre->numLote = $request->numLote;
     	$pre->superficie = $request->superficie;
-    	$pre->tipIrrigacion = $request->tipIrrigacion;
+    	$pre->regimenHumedad = $request->regimenHumedad;
     	$pre->tipRiego = $request->tipRiego;
+        $pre->latitud = $request->latitud;
+        $pre->longitud = $request->longitud;
+        $pre->altitud = $request->altitud;
     	$pre->observaciones = $request->observaciones;
         
     	$pre->save();
@@ -44,8 +47,11 @@ class PrediosController extends Controller
     	$pre->nombrePredio = $request->nombrePredio;
         $pre->numLote = $request->numLote;
     	$pre->superficie = $request->superficie;
-    	$pre->tipIrrigacion = $request->tipIrrigacion;
-    	$pre->tipRiego = $request->tipRiego;
+    	$pre->regimenHumedad = $request->regimenHumedad;
+        $pre->tipRiego = $request->tipRiego;
+        $pre->latitud = $request->latitud;
+        $pre->longitud = $request->longitud;
+        $pre->altitud = $request->altitud;
     	$pre->observaciones = $request->observaciones;
         $pre->save();
 

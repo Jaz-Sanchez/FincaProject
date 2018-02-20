@@ -17,6 +17,7 @@
 					<th>Año</th>
 					<th>Depreciacion</th>
 					<th>Valor Actual</th>
+					<th>Placa</th>
 					
 					<th colspan="3">&nbsp;</th>
 				</tr>
@@ -32,7 +33,8 @@
 						</td>
 						<td>{{ $vehicul->yearFabricacion }}</td>
 						<td>{{ $vehicul->Adepreciacion }}</td>
-						<td>{{ $vehicul->ValorActVeh }}</td>						
+						<td>{{ $vehicul->ValorActVeh }}</td>
+						<td>{{ $vehicul->Placa }}</td>						
 				
 						<td>
 							<a href="{{ route('vehic.show', $vehicul->id) }}" class="btn btn-link">ver</a>

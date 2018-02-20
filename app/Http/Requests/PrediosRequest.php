@@ -29,8 +29,11 @@ class PrediosRequest extends FormRequest
             'nombrePredio' => 'required',
             'numLote' => 'required',
             'superficie' => 'required',
-            'tipIrrigacion' => 'required',
+            'regimenHumedad' => 'required',
             'tipRiego' => 'required',
+            'latitud' =>'required',
+            'longitud' =>'required',
+            'altitud' =>'required',
             'observaciones' => 'required'
         ];
     }

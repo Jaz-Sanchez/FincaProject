@@ -24,13 +24,28 @@
 </div>
 
 <div class="form-group">
-	{!! Form::label('tipIrrigacion','Tipo de irrigacion') !!}
-	{!! Form::text('tipIrrigacion', null, ['class' => 'form-control']) !!}
+	{!! Form::label('regimenHumedad','Regimen de humedad') !!}
+	{!! Form::text('regimenHumedad', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
 	{!! Form::label('tipRiego','Tipo de riego') !!}
 	{!! Form::text('tipRiego', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+	{!! Form::label('latitud','Latitud') !!}
+	{!! Form::text('latitud', null, ['class' => 'form-control','step'=>'any']) !!}
+</div>
+
+<div class="form-group">
+	{!! Form::label('longitud','Longitud') !!}
+	{!! Form::text('longitud', null, ['class' => 'form-control','step'=>'any']) !!}
+</div>
+
+<div class="form-group">
+	{!! Form::label('altitud','Altitud') !!}
+	{!! Form::text('altitud', null, ['class' => 'form-control','step'=>'any']) !!}
 </div>
 
 <div class="form-group">

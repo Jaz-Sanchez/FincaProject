@@ -65,5 +65,10 @@
 </div>
 
 <div class="form-group">
+	{!! Form::label('Placa','No. PLaca') !!}
+	{!! Form::text('Placa', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
 	{!! Form::submit('ENVIAR', ['class' => 'btn btn-primary']) !!}
 </div>

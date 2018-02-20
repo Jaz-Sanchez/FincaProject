@@ -33,7 +33,8 @@ class VehiculosRequest extends FormRequest
             'ModeloVeh'  => 'required',
             'yearFabricacion' => 'required',
             'Adepreciacion' => 'required',
-            'ValorActVeh'   => 'required'
+            'ValorActVeh'   => 'required',
+            'Placa' => 'required'
 
         ];
     }

@@ -13,8 +13,11 @@
 					<th>Nombre del predio</th>
 					<th>numLote</th>
 					<th>Superficie</th>
-					<th>Tipo de irrigacion</th>
+					<th>Regimen de humedad</th>
 					<th>Tipo de riego</th>
+					<th>Latitud</th>
+					<th>Longitud</th>
+					<th>Altitud</th>
 					<th>Observaciones</th>
 					
 					<th colspan="3">&nbsp;</th>
@@ -28,8 +31,11 @@
 					</td>	
 					<td>{{ $predidio->numLote }}</td>
 					<td>{{ $predidio->superficie }}</td>
-					<td>{{ $predidio->tipIrrigacion }}</td>
+					<td>{{ $predidio->regimenHumedad }}</td>
 					<td>{{ $predidio->tipRiego }}</td>
+					<td>{{ $predidio->latitud }}</td>
+					<td>{{ $predidio->longitud }}</td>
+					<td>{{ $predidio->altitud }}</td>
 					<td>{{ $predidio->observaciones }}</td>
 					
 					<td>

@@ -37,6 +37,7 @@ class VehiculosController extends Controller
         $veh->yearFabricacion = $request->yearFabricacion;
     	$veh->Adepreciacion = $request->Adepreciacion;
     	$veh->ValorActVeh = $request->ValorActVeh;
+        $veh->Placa = $request->Placa;
     	$veh->save();
 
     	return redirect()->route('vehic.index')
@@ -56,6 +57,7 @@ class VehiculosController extends Controller
         $veh->yearFabricacion = $request->yearFabricacion;
     	$veh->Adepreciacion = $request->Adepreciacion;
     	$veh->ValorActVeh = $request->ValorActVeh;
+        $veh->Placa = $request->Placa;
     	$veh->save();
     	return redirect()->route('vehic.index')
     					 ->with('info', 'Actualizado correctamente');
