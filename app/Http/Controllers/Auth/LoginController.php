@@ -24,7 +24,7 @@ class LoginController extends Controller
             'password' => 'required|string',
         ]);
         if ($this->attemptLogin($request)) {
-            return redirect('welcome');
+            return redirect('home');
         }
 
 /*        $credentials = $this->validate(request(), [

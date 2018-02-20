@@ -6,8 +6,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('dashboard','DashboardController@index')->name('dashboard');
 
-Route::get('login', 'Auth\LoginController@login')->name('login');
-Route::post('login', 'Auth\LoginController@login');
+Route::get('Login', 'Auth\LoginController@login')->name('Login');
+Route::post('Login', 'Auth\LoginController@login');
 
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
